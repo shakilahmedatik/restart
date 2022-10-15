@@ -16,6 +16,7 @@ struct OnboardingView: View {
     @State private var isAnimating: Bool = false
     @State private var imageOffset: CGSize = .zero
     @State private var indicatorOpacity: Double = 1
+    @State private var textTitle: String = "Share."
     
     var body: some View {
         ZStack {
@@ -27,10 +28,12 @@ struct OnboardingView: View {
                 // MARK: - HEADER
                 Spacer()
                 VStack(spacing: 0){
-                    Text("Share.")
+                    Text(textTitle)
                         .font(.system(size: 60))
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
+                        .transition(.opacity)
+                        .id(textTitle)
                     
                     Text("""
                     It's not how much we give
@@ -72,12 +75,14 @@ struct OnboardingView: View {
                                     indicatorOpacity = 0
                                 }
                                 
+                                textTitle = "Give."
                             }
                             .onEnded{ _ in
                                 imageOffset = .zero
                                 withAnimation(.linear(duration: 0.5).delay(0.25)) {
                                     indicatorOpacity = 1
                                 }
+                                textTitle = "Share."
                                 
                             }
                         )//: GESTURE
