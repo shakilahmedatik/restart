@@ -15,6 +15,7 @@
 		474127AB28F3A38900D2CACD /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 474127A928F3A38900D2CACD /* success.m4a */; };
 		474127B828F3AAAD00D2CACD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474127B728F3AAAD00D2CACD /* OnboardingView.swift */; };
 		474127BA28F3AAC500D2CACD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474127B928F3AAC500D2CACD /* HomeView.swift */; };
+		479EC63D2907CCF400FD9492 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479EC63C2907CCF400FD9492 /* AudioPlayer.swift */; };
 		47B9CE1F28F5F60900DCE999 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B9CE1E28F5F60900DCE999 /* CircleGroupView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		474127B028F3A7FF00D2CACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		474127B728F3AAAD00D2CACD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		474127B928F3AAC500D2CACD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		479EC63C2907CCF400FD9492 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		47B9CE1E28F5F60900DCE999 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		474127AF28F3A70D00D2CACD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				479EC63C2907CCF400FD9492 /* AudioPlayer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				474127BA28F3AAC500D2CACD /* HomeView.swift in Sources */,
 				4741279D28F3A29000D2CACD /* ContentView.swift in Sources */,
 				4741279B28F3A29000D2CACD /* RestartApp.swift in Sources */,
+				479EC63D2907CCF400FD9492 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
